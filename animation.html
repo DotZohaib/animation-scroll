@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation Clone</title>
+
+</head>
+<style>
+    body{
+        overflow-x: hidden;
+    }
+
+    #home{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #home h1{
+        font-size: 60px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #box1{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 70px;
+    }
+    #box1 #mini-box1{
+        height: 250px;
+        width: 300px;
+        background-color: blue;
+        border-radius: 8px;
+    }
+    #box1 #mini-box2{
+        height: 250px;
+        width: 300px;
+        background-color: green;
+        border-radius: 8px;
+    }
+    #box1 #mini-box3{
+        height: 250px;
+        width: 300px;
+        background-color: palevioletred;
+        border-radius: 8px;
+    }
+    #box2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 70px;
+    }
+    #box2 #sec-mini-box1{
+        height: 250px;
+        width: 300px;
+        background-color: rgb(255, 0, 85);
+        border-radius: 8px;
+    }
+    #box2 #sec-mini-box2{
+        height: 250px;
+        width: 730px;
+        background-color: rgb(246, 255, 0);
+        border-radius: 8px;
+    }
+    #box3 {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 70px;
+    }
+    #box3 #th-mini-box2{
+        height: 250px;
+        width: 300px;
+        background-color: rgb(255, 0, 242);
+        border-radius: 8px;
+    }
+    #box3 #th-mini-box1{
+        height: 250px;
+        width: 730px;
+        background-color: rgb(255, 183, 0);
+        border-radius: 8px;
+    }
+    #box4 {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 70px;
+    }
+    #box4 #four-mini-box2{
+        height: 250px;
+        width: 500px;
+        background-color: rgb(0, 206, 252);
+        border-radius: 8px;
+    }
+    #box4 #four-mini-box1{
+        height: 250px;
+        width: 520px;
+        background-color: rgb(34, 255, 0);
+        border-radius: 8px;
+    }
+
+
+    @keyframes appear {
+        from{
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+        
+    }
+
+    .box{
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 50%;
+    }
+</style>
+<body>
+    <div id="container">
+        <div id="home">
+            <h1>Animate On Scroll</h1>
+        </div>
+        <div id="boxes">
+            <div id="box1">
+                <div id="mini-box1" class="box"></div>
+                <div id="mini-box2" class="box"></div>
+                <div id="mini-box3" class="box"></div>
+            </div>
+            <div id="box2">
+                <div id="sec-mini-box1" class="box"></div>
+                <div id="sec-mini-box2" class="box"></div>
+            </div>
+            <div id="box3">
+                <div id="th-mini-box1" class="box"></div>
+                <div id="th-mini-box2" class="box"></div>
+            </div>
+            <div id="box4">
+                <div id="four-mini-box1" class="box"></div>
+                <div id="four-mini-box2" class="box"></div>
+            </div>
+            <div id="box1">
+                <div id="mini-box1" class="box"></div>
+                <div id="mini-box2" class="box"></div>
+                <div id="mini-box3" class="box"></div>
+            </div>
+            <div id="box2">
+                <div id="sec-mini-box1" class="box"></div>
+                <div id="sec-mini-box2" class="box"></div>
+            </div>
+            <div id="box3">
+                <div id="th-mini-box1" class="box"></div>
+                <div id="th-mini-box2" class="box"></div>
+            </div>
+            <div id="box4">
+                <div id="four-mini-box1" class="box"></div>
+                <div id="four-mini-box2" class="box"></div>
+            </div>
+            <div id="box1">
+                <div id="mini-box1" class="box"></div>
+                <div id="mini-box2" class="box"></div>
+                <div id="mini-box3" class="box"></div>
+            </div>
+            <div id="box2">
+                <div id="sec-mini-box1" class="box"></div>
+                <div id="sec-mini-box2" class="box"></div>
+            </div>
+            <div id="box3">
+                <div id="th-mini-box1" class="box"></div>
+                <div id="th-mini-box2" class="box"></div>
+            </div>
+            <div id="box4">
+                <div id="four-mini-box1" class="box"></div>
+                <div id="four-mini-box2" class="box"></div>
+            </div>
+            <div id="box1">
+                <div id="mini-box1" class="box"></div>
+                <div id="mini-box2" class="box"></div>
+                <div id="mini-box3" class="box"></div>
+            </div>
+            <div id="box2">
+                <div id="sec-mini-box1" class="box"></div>
+                <div id="sec-mini-box2" class="box"></div>
+            </div>
+            <div id="box3">
+                <div id="th-mini-box1" class="box"></div>
+                <div id="th-mini-box2" class="box"></div>
+            </div>
+            <div id="box4">
+                <div id="four-mini-box1" class="box"></div>
+                <div id="four-mini-box2" class="box"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
